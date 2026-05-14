@@ -166,3 +166,106 @@ body {
     background: #252525;
     border-top-color: #333;
 }
+
+/* Auth page */
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+}
+
+.auth-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 380px;
+}
+
+.auth-card h2 { margin-bottom: 1rem; font-size: 1.4rem; }
+
+.auth-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 1.25rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.auth-tab {
+    flex: 1;
+    padding: .45rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: .9rem;
+    color: #555;
+}
+
+.auth-tab.active {
+    background: #1976d2;
+    color: #fff;
+}
+
+.auth-form { display: flex; flex-direction: column; gap: .9rem; }
+
+/* Shared form fields */
+.field { display: flex; flex-direction: column; gap: .3rem; }
+.field label { font-size: .85rem; color: #555; }
+
+.field input,
+.field textarea {
+    padding: .5rem .75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: .95rem;
+    font-family: inherit;
+    outline: none;
+}
+
+.field input:focus,
+.field textarea:focus { border-color: #1976d2; }
+
+.error { font-size: .8rem; color: #d32f2f; }
+
+/* User profile in header */
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-left: auto;
+}
+
+.user-name { font-size: .9rem; }
+
+.btn-logout {
+    background: rgba(255,255,255,.15);
+    border: 1px solid rgba(255,255,255,.3);
+    color: #fff;
+    padding: .3rem .75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: .85rem;
+}
+.btn-logout:hover { background: rgba(255,255,255,.25); }
+
+/* Feedback */
+.feedback-form { display: flex; flex-direction: column; gap: .9rem; max-width: 500px; margin-top: 1rem; }
+
+.review-card {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .75rem 1rem;
+    margin-bottom: .6rem;
+    background: #fff;
+}
+
+.page.dark .review-card { background: #2a2a2a; border-color: #333; }
+
+.review-author { font-weight: 600; font-size: .85rem; display: block; margin-bottom: .25rem; color: #1976d2; }
+
+.no-reviews { color: #888; font-size: .9rem; }

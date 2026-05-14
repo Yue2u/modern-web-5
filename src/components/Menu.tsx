@@ -16,6 +16,11 @@ export default function Menu() {
                         Счётчик (Redux)
                     </NavLink>
                 </li>
+                <li>
+                    <NavLink to="/feedback" className={({ isActive }) => "menu-item" + (isActive ? " active" : "")}>
+                        Обратная связь
+                    </NavLink>
+                </li>
             </ul>
 
             <p className="menu-title" style={{ marginTop: "1rem" }}>Лабораторные</p>
